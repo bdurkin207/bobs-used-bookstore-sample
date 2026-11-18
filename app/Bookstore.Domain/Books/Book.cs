@@ -1,4 +1,5 @@
 ﻿using Bookstore.Domain.ReferenceData;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bookstore.Domain.Books
 {
@@ -54,6 +55,7 @@ namespace Bookstore.Domain.Books
         public ReferenceDataItem Condition { get; set; }
         public int ConditionId { get; set; }
 
+        [Column("coverimageurl")]
         public string? CoverImageUrl { get; set; }
 
         public string? Summary { get; set; }
